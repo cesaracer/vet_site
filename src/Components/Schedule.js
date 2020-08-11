@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import data from '../Data/hours.json';
+import { Link } from 'react-router-dom';
+import data from '../data/hours.json';
 
 let randomNums = data.Openings
 export default class Schedule extends React.Component{
@@ -15,7 +15,8 @@ export default class Schedule extends React.Component{
             date: '',
             time: '',
             petName: '',
-            petType: '', 
+            petType: '',
+            appointmentType: '', 
             available: []
         }
     }
@@ -32,7 +33,7 @@ export default class Schedule extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         }) 
-        // fetch('https://jsonplaceholder.typicode.com/posts')
+        // fetch('insert api here')
         // .then(res => res.json())
         // .then(data => {
         //     this.setState({
@@ -45,21 +46,38 @@ export default class Schedule extends React.Component{
     }
 
     handleSubmit = e => {
-        if(!this.verify()){
-            e.preventDefault()
-            window.alert("Fill out the form")
+        if(this.state.firstName === '' || this.state.lastName === ''){
+            alert("Please enter your name!")
+            e.preventDefault();
+            return;
+        }
+        if(this.state.email === ''){
+            alert('Please enter your email!')
+            e.preventDefault();
+            return;
+        }
+        if(!this.phoneRegex.test(this.state.phone)){
+            alert('Please enter a valid number!')
+            e.preventDefault();
+            return;
+        }
+        if(this.state.date === ''){
+            alert('Please enter an appointment date!')
+            e.preventDefault();
+            return;
+        }
+        if(this.state.petName === ''){
+            alert('Please tell us your pet\'s name!')
+            e.preventDefault();
+            return;
+        }
+        if(this.state.appointmentType === ''){
+            alert('What can we do for you? Select an appointment type')
+            e.preventDefault();
+            return;
         }
     }
 
-    verify = () => {
-        console.log(this.state)
-        if(this.state.firstName === ''){
-            return false;
-        }
-
-
-        return true;
-    }
 
     phoneRegex = new RegExp('[(]?[0-9]{3}[)]?[-]?[0-9]{3}[-]?[0-9]{4}')
 
@@ -117,16 +135,16 @@ export default class Schedule extends React.Component{
                     </div>
                     <div className="form-group">
                         <label>Reason For Visit</label>
-                        <select>
+                        <select name="appointmentType" onChange={this.handleChange}>
                             <option></option>
-                            <option>Vaccination</option>
-                            <option>Microchip</option>
-                            <option>Grooming</option>
-                            <option>Check Up</option>
+                            <option value="Vaccination">Vaccination</option>
+                            <option value="Microchip">Microchip</option>
+                            <option value="Grooming">Grooming</option>
+                            <option value="Check Up">Check Up</option>
                         </select>
                     </div>
                     <div style={{float: "right"}}>
-                        <Link id="btn" onClick={this.handleSubmit} to={{pathname: '/confirm', state: this.state}}>Next</Link>
+                        <Link class="btn" onClick={this.handleSubmit} to={{pathname: '/confirm', state: this.state}}>Next</Link>
                     </div>
                 </form>
             </div>
