@@ -1,0 +1,39 @@
+.profile {
+  width: 70%;
+  margin-left: 15%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.profile .profile-avatar {
+  float: left;
+  width: 30%;
+}
+
+.profile .profile-avatar h4 {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.profile .profile-description {
+  float: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+  }
+  .profile .profile-avatar {
+    width: 100%;
+  }
+  .profile .profile-avatar h4 {
+    padding-left: 0px;
+  }
+  .profile .profile-description {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,81 @@
+.navbar {
+  width: 45%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+}
+
+.navbar .navbar-logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .navbar-logo .logo {
+  float: left;
+  height: 100px;
+}
+
+.navbar-links {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.navbar-container {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-links-tab {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
+  color: white;
+}
+
+.navbar-links-tab:hover {
+  border-bottom: solid white 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .navbar .navbar-logo {
+    width: 100%;
+    float: left;
+  }
+  .navbar .logo {
+    height: 60px;
+  }
+  .navbar-links {
+    width: 100%;
+  }
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-links-tab {
+    width: 100%;
+    float: left;
+  }
+  .navbar-title {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+  .navbar {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+/*# sourceMappingURL=header.css.map */

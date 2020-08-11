@@ -1,0 +1,260 @@
+.navbar {
+  width: 45%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+}
+
+.navbar .navbar-logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .navbar-logo .logo {
+  float: left;
+  height: 100px;
+}
+
+.navbar-links {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.navbar-container {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-links-tab {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
+  color: white;
+}
+
+.navbar-links-tab:hover {
+  border-bottom: solid white 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .navbar .navbar-logo {
+    width: 100%;
+    float: left;
+  }
+  .navbar .logo {
+    height: 60px;
+  }
+  .navbar-links {
+    width: 100%;
+  }
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-links-tab {
+    width: 100%;
+    float: left;
+  }
+  .navbar-title {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+  .navbar {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+label {
+  width: 25%;
+  float: left;
+}
+
+input {
+  border: none;
+  background-color: #dfdfdf;
+  float: left;
+  height: 25px;
+  border-radius: 3px;
+}
+
+select {
+  border: none;
+  background-color: #dfdfdf;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.form-group {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+.review {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.review h4 {
+  font-weight: 600;
+}
+
+.review-title {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-bottom: solid black 2px;
+  text-align: center;
+}
+
+.card {
+  width: 50%;
+  float: left;
+}
+
+.card .card-avatar {
+  float: left;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+.card .card-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.card .card-description {
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.profile {
+  width: 70%;
+  margin-left: 15%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.profile .profile-avatar {
+  float: left;
+  width: 30%;
+}
+
+.profile .profile-avatar h4 {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.profile .profile-description {
+  float: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+  }
+  .profile .profile-avatar {
+    width: 100%;
+  }
+  .profile .profile-avatar h4 {
+    padding-left: 0px;
+  }
+  .profile .profile-description {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d4d4d4;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.content {
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+  color: white;
+  background-color: black;
+  display: block;
+  height: 25px;
+  width: 80px;
+  border-radius: 3px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+#message {
+  width: 70%;
+}
+
+/*For mobile devices*/
+@media screen and (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/*For tablets*/
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+  .container {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

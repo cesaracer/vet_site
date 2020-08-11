@@ -1,0 +1,31 @@
+.card {
+  width: 50%;
+  float: left;
+}
+
+.card .card-avatar {
+  float: left;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+.card .card-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.card .card-description {
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=card.css.map */

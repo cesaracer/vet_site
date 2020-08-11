@@ -1,0 +1,33 @@
+form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+label {
+  width: 25%;
+  float: left;
+}
+
+input {
+  border: none;
+  background-color: #dfdfdf;
+  float: left;
+  height: 25px;
+  border-radius: 3px;
+}
+
+select {
+  border: none;
+  background-color: #dfdfdf;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.form-group {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=form.css.map */
