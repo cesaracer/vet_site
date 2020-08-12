@@ -15,7 +15,7 @@ export default function Home(){
                                 when it comes to not only quality care, but affordability as well. Schedule an appointment today! You owe it to your pet to get the best quality care at a price that won't hurt 
                                 your wallet. We accept most forms of animal insurance and are more than capable of setting up custom payment plans if needed. 
                             </p>
-                        </div>"
+                        </div>
                 </div>
                 <div className="content-block-right">
                     <img className="content-block-img" src="images/city.jpg" alt="clinic" />
