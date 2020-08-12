@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
 
     .navbar{
         margin-left: 0%;
@@ -72,12 +72,5 @@
     .navbar-title{
         width: 100%;
         font-size: 15px;
-    }
-  }
-
-  @media screen and (min-width: 701px) and (max-width: 1300px){
-    .navbar{
-        width: 80%;
-        margin-left: 10%;
     }
   }

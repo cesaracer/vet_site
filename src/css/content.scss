@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .content{
         width: 100%;
         .content-block-left{
@@ -40,17 +40,4 @@
     }
 
     
-}
-
-@media screen and (min-width: 701px) and (max-width: 1300px){
-    .content{
-        width: 80%;
-        .content-block-img{
-            margin-top: 50px;
-            height: 40%;
-        }
-        .content-block-text{
-            width: 60%;
-        }
-    }
 }
