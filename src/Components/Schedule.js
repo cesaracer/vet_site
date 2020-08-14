@@ -33,16 +33,16 @@ export default class Schedule extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         }) 
-        // fetch('insert api here')
-        // .then(res => res.json())
-        // .then(data => {
-        //     this.setState({
-        //         available: data
-        //     })
-        // })
-        this.setState({
-            available: randomNums
+        fetch('https://localhost:5000/api/times')
+        .then(res => res.json())
+        .then(data => {
+            this.setState({
+                available: data
+            })
         })
+        // this.setState({
+        //     available: randomNums
+        // })
     }
 
     handleSubmit = e => {
