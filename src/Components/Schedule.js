@@ -33,7 +33,7 @@ export default class Schedule extends React.Component{
         this.setState({
             [e.target.name]: e.target.value
         }) 
-        fetch('https://localhost:5000/api/times')
+        fetch('/times')
         .then(res => res.json())
         .then(data => {
             this.setState({
@@ -51,7 +51,7 @@ export default class Schedule extends React.Component{
             e.preventDefault();
             return;
         }
-        if(this.state.email === ''){
+        if(!this.emailRegex.test(this.state.email)){
             alert('Please enter your email!')
             e.preventDefault();
             return;
@@ -80,6 +80,7 @@ export default class Schedule extends React.Component{
 
 
     phoneRegex = new RegExp('[(]?[0-9]{3}[)]?[-]?[0-9]{3}[-]?[0-9]{4}')
+    emailRegex =  /\S+@\S+\.\S+/
 
     render(){
         return(
@@ -123,7 +124,7 @@ export default class Schedule extends React.Component{
                     </div>
                     <div className="form-group">
                         <label>Pet Type: </label>
-                        <select>
+                        <select name="petType" onChange={this.handleChange}>
                             <option></option>
                             <option value="Dog">Dog</option>
                             <option value="Cat">Cat</option>
@@ -144,7 +145,7 @@ export default class Schedule extends React.Component{
                         </select>
                     </div>
                     <div style={{float: "right"}}>
-                        <Link class="btn" onClick={this.handleSubmit} to={{pathname: '/confirm', state: this.state}}>Next</Link>
+                        <Link className="btn" onClick={this.handleSubmit} to={{pathname: '/confirm', state: this.state}}>Next</Link>
                     </div>
                 </form>
             </div>
